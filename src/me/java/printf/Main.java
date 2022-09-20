@@ -10,24 +10,25 @@ public class Main { public static void main(String[] args) {
 
     // int
     System.out.printf("%d\n", i);
-    System.out.printf("%10d\n", i); // 오른쪽으로 정렬
+    System.out.printf("%10d\n", i); // 오른쪽으ㄷ로 정렬
     System.out.printf("%-10d\n", i); // 왼쪽으로 정렬
-    System.out.printf("%010d\n", i);
-    System.out.printf("%o\n", i);
-    System.out.printf("%x\n", i);
-    System.out.printf("%X\n", i);
-    System.out.printf("%n");
+    System.out.printf("%010d\n", i); //0000000010
+    System.out.printf("%o\n", i); //8진수
+    System.out.printf("%x\n", i); // 16진수
+    System.out.printf("%X\n", i); // 16진수
+    System.out.printf("%n"); // 엔터 출력 '\n'
     System.out.println();
 
     // float
+    // f = 3.1412312412412312f
     System.out.printf("%f\n", f);
     System.out.printf("%.2f\n", f);
     System.out.printf("%.8f\n", f); // 부동 소수점의 오차 (**)
     System.out.printf("%5.2f\n", f);
     System.out.printf("%-5.2f\n", f);
-    System.out.printf("%e\n", f);
-    System.out.printf("%E\n", f);
-    System.out.printf("%30.3e\n", f);
+    System.out.printf("%e\n", f); // 12345.1234 ==1.23451234 x 10^4 == 1.2341234e4- 지수표기법으로 출력 하겠다
+    System.out.printf("%E\n", f); // 1.2341234E4 - 실수를 저장->지수표기법
+    System.out.printf("%30.3e\n", f); // 30칸에 3번째 부분까지만 출력
     System.out.printf("%30.3E\n", f);
     System.out.println();
 
